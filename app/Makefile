@@ -19,8 +19,8 @@ heroku-logs:
 	heroku logs --tail
 
 ci:
-	sudo docker-compose -f docker-compose.yml up --abort-on-container-exit
+	docker-compose -f docker-compose.yml up --abort-on-container-exit
 build:
-	sudo docker-compose -f docker-compose.yml build app
+	docker-compose -f docker-compose.yml build app
 push:
-	sudo docker-compose -f docker-compose.yml push app
+	docker-compose -f docker-compose.yml push app
